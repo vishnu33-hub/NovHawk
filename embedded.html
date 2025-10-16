@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="icon.png">
+  <title>NovHawk</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="overflow-hidden">
+    <div class="row bg-black px-3 text-white py-1">
+      <div class="col-lg-4 col-md-6" title="Your Address">
+        <i class="fa-solid fa-location-dot text-blue-400"></i>
+        <span class="d-none d-md-inline-block ml-2">Kinathukadavu - Coimbatore</span>
+      </div>
+      <div class="col-lg-4 col-md-4 text-center" title="Email">
+        <i class="fa-solid fa-envelope text-blue-400"></i>
+        <span class="d-none d-md-inline-block ml-2">info@NovHawk.com</span>
+      </div>
+      <div class="col-lg-4 col-md-2 d-flex justify-content-end space-x-2">
+        <a href="#"><i class="fa-brands fa-facebook-f aicon"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp aicon"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram aicon"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in aicon"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top p-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/Logo.jpeg" alt="Logo" style="height:50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center pt-32 pb-20 bg-gray-100">
+    <h1 class="text-5xl font-bold mb-4">NovHawk</h1>
+    <h2 class="text-3xl mb-6">Projects for Progress</h2>
+    <p class="mb-6 text-gray-700 px-5">Buy our exclusive NovHawk products now! High quality, reliable, and perfect for your needs. Contact us directly to place your order.</p>
+    <a href="#contact" class="btn btn-primary px-6 py-3 mr-2">Contact Me</a>
+    <a href="#pricing" class="btn btn-outline-primary px-6 py-3">See Pricing</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="features" class="py-20">
+    <div class="container">
+    <h2 class="text-4xl text-center mb-12" style="color:#2a5298;">Our Services</h2>
+    <div class="row text-center">
+            <div class="services">
+                <div class="service-card">
+                    <!-- <img src="feature1.png" alt="" class="service-card" style="width:100px;"> -->
+                    <h3>Web Application Development</h3>
+                    <p>Dynamic, responsive, and scalable websites designed for modern businesses and projects.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Machine Learning Projects</h3>
+                    <p>AI-powered models for predictive analytics, image recognition, and intelligent automation.</p>
+                </div>
+                <div class="service-card">
+                    <h3>IoT & Embedded Systems</h3>
+                    <p>Smart solutions using ESP32, Arduino, and sensors to connect hardware with intelligence.</p>
+                </div>
+            </div>
+    </div>
+    
+        
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 bg-gray-100">
+    <div class="container text-center">
+      <h2 class="text-4xl mb-6">Products</h2>
+      <p class="mb-12">Choose your package and contact us to order</p>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-6">
+          <div class="card shadow p-4">
+            <h5 class="mb-3">Basic Package</h5>
+            <p>product , shipping cost</p>
+            <h3 class="my-3">$50</h3>
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-6">
+          <div class="card shadow p-4">
+            <h5 class="mb-3">Standard Package</h5>
+            <p>2 products, free shipping</p>
+            <h3 class="my-3">$90</h3>
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-6">
+          <div class="card shadow p-4">
+            <h5 class="mb-3">Premium Package</h5>
+            <p>3 products, free shipping + bonus</p>
+            <h3 class="my-3">$130</h3>
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-blue-600 text-white">
+    <div class="container">
+      <h2 class="text-center mb-6">Order Details</h2>
+      <p class="text-center mb-12">Fill the form below and I will get back to you to complete your order.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Phone" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" placeholder="Message (What projects do you need)"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary px-5 py-3">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-white py-4">
+    <p class="mb-0">© 2025 [Your Product]. All Rights Reserved | Designed by Vishnu Kumar</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
